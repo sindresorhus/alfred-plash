@@ -1,6 +1,6 @@
 {
 	"name": "alfred-plash",
-	"version": "0.0.0",
+	"version": "0.1.0",
 	"description": "Alfred workflow to control the Plash app",
 	"license": "MIT",
 	"repository": "sindresorhus/alfred-plash",
