@@ -1,0 +1,34 @@
+{
+	"name": "alfred-plash",
+	"version": "0.0.0",
+	"description": "Alfred workflow to control the Plash app",
+	"license": "MIT",
+	"repository": "sindresorhus/alfred-plash",
+	"author": {
+		"name": "Sindre Sorhus",
+		"email": "sindresorhus@gmail.com",
+		"url": "https://sindresorhus.com"
+	},
+	"engines": {
+		"node": ">=12"
+	},
+	"scripts": {
+		"postinstall": "alfy-init",
+		"preuninstall": "alfy-cleanup"
+	},
+	"files": [
+		"icon.png",
+		"info.plist"
+	],
+	"keywords": [
+		"alfred",
+		"workflow",
+		"alfy",
+		"macos",
+		"mac",
+		"plash"
+	],
+	"dependencies": {
+		"alfy": "^0.10.0"
+	}
+}
