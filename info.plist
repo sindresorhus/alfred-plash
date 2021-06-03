@@ -34,6 +34,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>45F9DD0B-785E-44CE-8138-A1E3901F6A27</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>24CBF291-F1C3-4D51-8D53-B8746467D1AB</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>4F7B26D6-23B2-484D-BC8E-77E2809D455D</key>
 		<array>
 			<dict>
@@ -108,7 +121,7 @@
 				<string>url=$(echo "$split1" | python -c "import sys, urllib; sys.stdout.write(urllib.quote(sys.stdin.read()))")
 title=$(echo "$split2" | python -c "import sys, urllib; sys.stdout.write(urllib.quote(sys.stdin.read()))")
 
-open "plash:add?url=${url}&amp;title=${title}"</string>
+open --background "plash:add?url=${url}&amp;title=${title}"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -133,7 +146,7 @@ open "plash:add?url=${url}&amp;title=${title}"</string>
 				<key>subtext</key>
 				<string></string>
 				<key>text</key>
-				<string>Add</string>
+				<string>Add Website</string>
 				<key>withspace</key>
 				<true/>
 			</dict>
@@ -169,7 +182,7 @@ open "plash:add?url=${url}&amp;title=${title}"</string>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>open plash:reload</string>
+				<string>open --background plash:reload</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
@@ -213,7 +226,7 @@ open "plash:add?url=${url}&amp;title=${title}"</string>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>open plash:next</string>
+				<string>open --background plash:next</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
@@ -238,7 +251,7 @@ open "plash:add?url=${url}&amp;title=${title}"</string>
 				<key>subtext</key>
 				<string></string>
 				<key>text</key>
-				<string>Next</string>
+				<string>Next Website</string>
 				<key>withspace</key>
 				<false/>
 			</dict>
@@ -259,7 +272,7 @@ open "plash:add?url=${url}&amp;title=${title}"</string>
 				<key>subtext</key>
 				<string></string>
 				<key>text</key>
-				<string>Previous</string>
+				<string>Previous Website</string>
 				<key>withspace</key>
 				<false/>
 			</dict>
@@ -278,7 +291,7 @@ open "plash:add?url=${url}&amp;title=${title}"</string>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>open plash:previous</string>
+				<string>open --background plash:previous</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
@@ -296,12 +309,56 @@ open "plash:add?url=${url}&amp;title=${title}"</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>plash</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>Random Website</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>45F9DD0B-785E-44CE-8138-A1E3901F6A27</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>open plash:toggle-browsing-mode</string>
+				<string>open --background plash:random</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>24CBF291-F1C3-4D51-8D53-B8746467D1AB</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>open --background plash:toggle-browsing-mode</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
@@ -356,6 +413,13 @@ open "plash:add?url=${url}&amp;title=${title}"</string>
 			<key>ypos</key>
 			<integer>155</integer>
 		</dict>
+		<key>24CBF291-F1C3-4D51-8D53-B8746467D1AB</key>
+		<dict>
+			<key>xpos</key>
+			<integer>270</integer>
+			<key>ypos</key>
+			<integer>555</integer>
+		</dict>
 		<key>2C99F6F1-EF16-4CF1-9762-5D05A1FFAA4D</key>
 		<dict>
 			<key>xpos</key>
@@ -369,6 +433,13 @@ open "plash:add?url=${url}&amp;title=${title}"</string>
 			<integer>270</integer>
 			<key>ypos</key>
 			<integer>285</integer>
+		</dict>
+		<key>45F9DD0B-785E-44CE-8138-A1E3901F6A27</key>
+		<dict>
+			<key>xpos</key>
+			<integer>50</integer>
+			<key>ypos</key>
+			<integer>555</integer>
 		</dict>
 		<key>4F7B26D6-23B2-484D-BC8E-77E2809D455D</key>
 		<dict>
@@ -389,7 +460,7 @@ open "plash:add?url=${url}&amp;title=${title}"</string>
 			<key>xpos</key>
 			<integer>270</integer>
 			<key>ypos</key>
-			<integer>555</integer>
+			<integer>690</integer>
 		</dict>
 		<key>87F0AACE-43F8-40B4-B748-93B7EF621AA2</key>
 		<dict>
@@ -410,7 +481,7 @@ open "plash:add?url=${url}&amp;title=${title}"</string>
 			<key>xpos</key>
 			<integer>50</integer>
 			<key>ypos</key>
-			<integer>555</integer>
+			<integer>690</integer>
 		</dict>
 		<key>AEF62B6A-F430-4BD1-916F-3DF559155F9F</key>
 		<dict>

@@ -9,13 +9,13 @@ $ npm install --global alfred-plash
 ```
 
 *Requires the Alfred [Powerpack](https://www.alfredapp.com/powerpack/).*\
-*Requires Plash 2.2.0 or later.*
+*Requires Plash 2.3.0 or later.*
 
 ## Usage
 
 In Alfred, type `plash`, choose a command, and then press <kbd>Enter</kbd>.
 
-The “Add” command accepts a URL and optionally a title:
+The “Add Website” command accepts a URL and optionally a title:
 
 ```
 https://sindresorhus.com/plash, Plash website
