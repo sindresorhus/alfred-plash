@@ -9,10 +9,12 @@
 		"email": "sindresorhus@gmail.com",
 		"url": "https://sindresorhus.com"
 	},
+	"type": "module",
 	"engines": {
-		"node": ">=12"
+		"node": ">=18"
 	},
 	"scripts": {
+		"test": "echo 🦄",
 		"postinstall": "alfy-init",
 		"preuninstall": "alfy-cleanup"
 	},
@@ -29,6 +31,6 @@
 		"plash"
 	],
 	"dependencies": {
-		"alfy": "^0.10.0"
+		"alfy": "^2.0.0"
 	}
 }

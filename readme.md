@@ -4,12 +4,11 @@
 
 ## Install
 
-```
-$ npm install --global alfred-plash
+```sh
+npm install --global alfred-plash
 ```
 
-*Requires the Alfred [Powerpack](https://www.alfredapp.com/powerpack/).*\
-*Requires Plash 2.3.0 or later.*
+*Requires the Alfred [Powerpack](https://www.alfredapp.com/powerpack/).*
 
 ## Usage
 
